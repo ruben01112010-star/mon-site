@@ -17,7 +17,11 @@
   button:hover {
     transform: scale(1.1);
   }  
-  
+  <button onclick="afficherImage()">Afficher l'image</button>
+
+<br><br>
+
+<img id="monImage" src="image.jpg" width="400" style="display: none;">
   </style>
 </head>
 <body>
@@ -44,6 +48,10 @@
       }
     }
   </script>
-
+<script>
+function afficherImage() {
+    document.getElementById("monImage").style.display = "block";
+}
+</script>
 </body>
 </html>
