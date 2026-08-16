@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ruben c moi</title>
-    
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial;
-            font-size: 20px;
-        }
-    </style>
+  <title>Ruben c moi</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      font-size: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Ruben c moi</h1>
-<style>
-    body {
-        text-align: center;
-        font-family: Arial;
-        font-size: 20px;
+
+  <h1>Ruben c moi</h1>
+  <p>salut je fait mon premier site</p>
+
+  <button onclick="toggleMode()">Mode sombre / clair</button>
+
+  <br><br>
+  <img src="image.jpg" width="300">
+
+  <script>
+    function toggleMode() {
+      // Si le fond est noir, on repasse en blanc
+      if (document.body.style.backgroundColor === 'black') {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+      } else { 
+        // Sinon, on passe en mode sombre
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+      }
     }
-</style>
-    <p>salut je fait mon premier site</p>
+  </script>
 
-    <button onclick="
-document.body.style.backgroundColor='black';
-document.body.style.color='white';
-">
-Mode sombre 
-</button>
-
-    <img src="image.jpg" width="300">
 </body>
 </html>
