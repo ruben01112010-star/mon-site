@@ -21,7 +21,6 @@
 <br><br>
 
 <img id="monImage" src="image.jpg" width="400" style="display: none;">
-    <img id="monImage" src="images/chat.jpg" width="400" style="display:none;">
   </style>
 </head>
 <body>
@@ -31,7 +30,7 @@
 
   <button onclick="toggleMode()">appuit tkt</button>
     <button onclick="afficherImage()">Afficher l'image</button>
-    
+    <img id="monImage" src="images/chat.jpg" width="400" style="display:none;">
   <br><br>
   <img src="image.jpg" width="400">
 
@@ -50,7 +49,7 @@
   </script>
 <script>
 function afficherImage() {
-    document.getElementById("chat.jpg").style.display = "block";
+    document.getElementById("imageCachee").style.display = "block";
 }
 </script>
 </body>
